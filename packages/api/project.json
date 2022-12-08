@@ -1,16 +1,19 @@
 {
-  "root": "packages/api",
+  "name": "api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/api/src",
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/node:webpack",
+      "executor": "@nrwl/webpack:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/api",
         "main": "packages/api/src/main.ts",
         "tsConfig": "packages/api/tsconfig.app.json",
-        "assets": ["packages/api/src/assets"]
+        "assets": ["packages/api/src/assets"],
+        "target": "node",
+        "compiler": "tsc"
       },
       "configurations": {
         "production": {
@@ -41,9 +44,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/api"],
+      "outputs": ["{workspaceRoot}/coverage/packages/api"],
       "options": {
-        "jestConfig": "packages/api/jest.config.js",
+        "jestConfig": "packages/api/jest.config.ts",
         "passWithNoTests": true
       }
     }

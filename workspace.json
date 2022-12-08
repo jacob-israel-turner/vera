@@ -2,5 +2,6 @@
   "version": 2,
   "projects": {
     "api": "packages/api"
-  }
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }
