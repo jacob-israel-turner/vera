@@ -1,7 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "api": "packages/api"
+    "api": "packages/api",
+    "neuron": "libs/neuron"
   },
   "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }
