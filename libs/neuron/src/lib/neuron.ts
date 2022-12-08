@@ -1,3 +1,1 @@
-export function neuron(): string {
-  return 'neuron';
-}
+export interface Neuron {}

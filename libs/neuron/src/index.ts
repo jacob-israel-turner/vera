@@ -1,1 +1,1 @@
-export * from './lib/neuron';
+export * from './lib/neuron'

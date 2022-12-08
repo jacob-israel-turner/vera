@@ -1,7 +1,7 @@
-import { neuron } from './neuron';
+import { neuron } from './neuron'
 
 describe('neuron', () => {
   it('should work', () => {
-    expect(neuron()).toEqual('neuron');
-  });
-});
+    expect(neuron()).toEqual('neuron')
+  })
+})
